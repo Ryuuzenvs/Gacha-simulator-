@@ -160,7 +160,7 @@ timelinePity.push({ globalPull: totalPullsCount, type: 'S', pity: currentPity })
         timelinePity.forEach(item => {
             const span = document.createElement('span');
             // Jika L warna Biru (Limited), Jika S warna Abu-abu (Standard)
-            const badgeClass = item.type === 'L' ? 'bg-warning' : 'bg-primary';
+            const badgeClass = item.type === 'L' ? 'bg-success' : 'bg-danger';
             
             span.className = `badge ${badgeClass} me-2 mb-2 p-2`;
             span.innerHTML = `Pull #${item.globalPull} (Pity ${item.pity})`;
